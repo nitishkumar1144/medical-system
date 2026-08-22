@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Amayra Medical System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-wrap">
+        <a href="index.html" class="logo">Amayra <span>Medical</span></a>
+        <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show')">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" style="padding:45px 20px;">
+    <h1 style="font-size:28px;">Our Products</h1>
+    <p>Browse our full range of hospital equipment &amp; infrastructure items</p>
+</section>
+
+<section>
+    <div class="filter-bar">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="pipeline">Gas Pipeline</button>
+        <button data-filter="oxygen">Oxygen</button>
+        <button data-filter="icu">ICU/OT Equipment</button>
+        <button data-filter="furniture">Furniture</button>
+    </div>
+
+    <div class="grid" id="productGrid">
+
+        <div class="product-card" data-cat="pipeline">
+            <div class="product-img">🧪</div>
+            <div class="product-body">
+                <span class="tag">Gas Pipeline</span>
+                <h3>Medical Copper Pipe (MGPS)</h3>
+                <p>ASTM B819 certified copper tubing for oxygen &amp; medical gas pipeline systems. Available in multiple sizes.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="pipeline">
+            <div class="product-img">⚙️</div>
+            <div class="product-body">
+                <span class="tag">Gas Pipeline</span>
+                <h3>Oxygen Manifold System</h3>
+                <p>Automatic/manual manifold systems for centralized oxygen supply with alarm panel.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="pipeline">
+            <div class="product-img">🚨</div>
+            <div class="product-body">
+                <span class="tag">Gas Pipeline</span>
+                <h3>Area Alarm System</h3>
+                <p>Digital gas pressure monitoring &amp; alarm system for wards, ICU and OT.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="oxygen">
+            <div class="product-img">🛢️</div>
+            <div class="product-body">
+                <span class="tag">Oxygen</span>
+                <h3>Jumbo Oxygen Cylinder (D-Type)</h3>
+                <p>High-capacity refillable oxygen cylinders for hospital ward supply.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="oxygen">
+            <div class="product-img">🧯</div>
+            <div class="product-body">
+                <span class="tag">Oxygen</span>
+                <h3>Oxygen Concentrator</h3>
+                <p>5L/10L capacity concentrators for continuous oxygen supply, portable &amp; fixed models.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="oxygen">
+            <div class="product-img">🔩</div>
+            <div class="product-body">
+                <span class="tag">Oxygen</span>
+                <h3>Oxygen Regulator &amp; Flow Meter</h3>
+                <p>Precision flow meters and pressure regulators compatible with all cylinder types.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="icu">
+            <div class="product-img">🫀</div>
+            <div class="product-body">
+                <span class="tag">ICU/OT</span>
+                <h3>ICU Ventilator</h3>
+                <p>Advanced life-support ventilators for critical care units.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="icu">
+            <div class="product-img">📟</div>
+            <div class="product-body">
+                <span class="tag">ICU/OT</span>
+                <h3>Multi-Parameter Patient Monitor</h3>
+                <p>Monitors ECG, SpO2, BP, pulse &amp; temperature in real time.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="icu">
+            <div class="product-img">💡</div>
+            <div class="product-body">
+                <span class="tag">ICU/OT</span>
+                <h3>OT Shadowless Light</h3>
+                <p>LED surgical lighting systems, ceiling or mobile mounted.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="icu">
+            <div class="product-img">🪑</div>
+            <div class="product-body">
+                <span class="tag">ICU/OT</span>
+                <h3>OT Table (Hydraulic)</h3>
+                <p>Fully adjustable hydraulic operation theatre table.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="furniture">
+            <div class="product-img">🛏️</div>
+            <div class="product-body">
+                <span class="tag">Furniture</span>
+                <h3>ICU Electric Bed</h3>
+                <p>Fully electric, multi-position ICU beds with side rails.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="product-card" data-cat="furniture">
+            <div class="product-img">🛞</div>
+            <div class="product-body">
+                <span class="tag">Furniture</span>
+                <h3>Stretcher &amp; Wheelchair</h3>
+                <p>Emergency stretchers, folding wheelchairs &amp; patient trolleys.</p>
+                <a href="contact.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section style="text-align:center; background:#0b3d66; color:#fff; border-radius:12px; max-width:1160px;">
+    <h2 style="font-size:24px; margin-bottom:14px;">Didn't find what you're looking for?</h2>
+    <p style="color:#d6e6f5; margin-bottom:26px;">We supply 500+ hospital equipment items. Tell us your requirement.</p>
+    <a href="contact.html" class="btn">Send Enquiry</a>
+</section>
+
+<footer>
+    <div class="footer-wrap">
+        <div>
+            <h4>Amayra Medical System</h4>
+            <p style="font-size:14px;">Complete hospital infrastructure &amp; medical equipment supplier.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+                <li><a href="mailto:info@medicareequipments.com">info@medicareequipments.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Amayra Medical System. All rights reserved.</div>
+</footer>
+
+<a href="https://wa.me/910000000000" class="whatsapp-float" target="_blank">&#128222;</a>
+
+<script>
+const buttons = document.querySelectorAll('.filter-bar button');
+const cards = document.querySelectorAll('.product-card');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+            if (filter === 'all' || card.dataset.cat === filter) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

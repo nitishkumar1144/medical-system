@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Amayra Medical System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-wrap">
+        <a href="index.html" class="logo">Amayra <span>Medical</span></a>
+        <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show')">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" style="padding:45px 20px;">
+    <h1 style="font-size:28px;">Get in Touch</h1>
+    <p>Send us your requirement and our team will get back with a quote</p>
+</section>
+
+<section>
+    <div class="contact-grid">
+        <div class="contact-info">
+            <div class="card">
+                <div class="icon">📞</div>
+                <h3>Call Us</h3>
+                <p>+91 00000 00000</p>
+            </div>
+            <div class="card">
+                <div class="icon">📧</div>
+                <h3>Email Us</h3>
+                <p>info@medicareequipments.com</p>
+            </div>
+            <div class="card">
+                <div class="icon">📍</div>
+                <h3>Visit Us</h3>
+                <p>Your City, State, India</p>
+            </div>
+            <div class="card">
+                <div class="icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/910000000000" target="_blank">Chat with us instantly</a></p>
+            </div>
+        </div>
+
+        <form class="form-wrap" onsubmit="handleSubmit(event)">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required placeholder="Your name">
+
+            <label for="hospital">Hospital / Organization Name</label>
+            <input type="text" id="hospital" placeholder="Hospital name">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required placeholder="+91">
+
+            <label for="category">Requirement</label>
+            <select id="category">
+                <option>Medical Gas Pipeline System</option>
+                <option>Oxygen Cylinders / Concentrators</option>
+                <option>ICU / OT Equipment</option>
+                <option>Hospital Furniture</option>
+                <option>Complete Hospital Setup</option>
+                <option>Other</option>
+            </select>
+
+            <label for="message">Message / Requirement Details</label>
+            <textarea id="message" placeholder="Tell us quantity, items needed, timeline etc."></textarea>
+
+            <button type="submit" class="btn">Send Enquiry</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-wrap">
+        <div>
+            <h4>Amayra Medical System</h4>
+            <p style="font-size:14px;">Complete hospital infrastructure &amp; medical equipment supplier.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+                <li><a href="mailto:info@medicareequipments.com">info@medicareequipments.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Amayra Medical System. All rights reserved.</div>
+</footer>
+
+<a href="https://wa.me/910000000000" class="whatsapp-float" target="_blank">&#128222;</a>
+
+<script>
+function handleSubmit(e) {
+    e.preventDefault();
+    alert("Thank you! Your enquiry has been noted. We'll contact you shortly.\n\n(Note: connect this form to an email service or backend to actually receive submissions.)");
+    e.target.reset();
+}
+</script>
+
+</body>
+</html>
